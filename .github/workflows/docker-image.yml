@@ -13,4 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file helix-p4d/Dockerfile --tag jankonikola93/helix-p4d:$(date +%s)
+      run: docker build ./helix-p4d --file Dockerfile --tag jankonikola93/helix-p4d:$(date +%s)
